@@ -49,10 +49,10 @@ st.markdown("""
 
 nav1, nav2, nav3, nav4 = st.columns(4)
 
-nav1.page_link("app.py", label="🏠 Home")
+nav1.page_link("App.py", label="🏠 Home")
 nav2.page_link("pages/Prediction.py", label="🔍 Prediction")
-nav3.page_link("pages/data_explorer.py", label="📊 Explorer")
-nav4.page_link("pages/model_comparison.py", label="🤖 Compare")
+nav3.page_link("pages/Data_Explorer.py", label="📊 Explorer")
+nav4.page_link("pages/Model_Comparison.py", label="🤖 Compare")
 
 st.divider()
 
