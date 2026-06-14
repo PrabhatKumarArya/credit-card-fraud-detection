@@ -2,6 +2,16 @@
 
 A machine learning-powered web application for detecting fraudulent credit card transactions using multiple classification models.
 
+## Dataset
+
+Dataset used in this project:
+
+https://www.kaggle.com/code/gpreda/credit-card-fraud-detection-predictive-models/notebook
+
+
+https://www.kaggle.com/code/samanfatima7/credit-card-fraud-detection-achieving-99-acc
+
+
 ## 🚀 Features
 
 * Multi-page Streamlit Dashboard

@@ -142,6 +142,40 @@ if uploaded_file is not None:
     st.subheader("📊 Data Preview")
     st.dataframe(df.head())
 
+    st.write("Uploaded Columns:")
+    st.write(list(df.columns))
+
+    st.write("Model Features:")
+    st.write(list(model.feature_names_in_))
+
+    if "Class" in df.columns:
+        df = df.drop("Class", axis=1)
+
+    expected_cols = list(model.feature_names_in_)
+
+    missing_cols = set(expected_cols) - set(df.columns)
+    extra_cols = set(df.columns) - set(expected_cols)
+
+    st.write("Missing:", missing_cols)
+    st.write("Extra:", extra_cols)
+
+    if "Class" in df.columns:
+        df = df.drop("Class", axis=1)
+
+    expected_cols = list(model.feature_names_in_)
+
+    missing_cols = set(expected_cols) - set(df.columns)
+    extra_cols = set(df.columns) - set(expected_cols)
+
+    st.write("Missing:", missing_cols)
+    st.write("Extra:", extra_cols)
+
+    if len(missing_cols) > 0:
+        st.error(f"Missing columns: {missing_cols}")
+        st.stop()
+
+    df = df[expected_cols]
+
     # -------------------------
     # PREDICTION
     # -------------------------
