@@ -1,5 +1,8 @@
 .vscode/
 .venv/
+.ipynb_checkpoints/
+
+*.ipynb
 
 notebooks/data/
 *.csv
