@@ -26,7 +26,7 @@ st.markdown("""
 
 nav1, nav2, nav3, nav4 = st.columns(4)
 
-nav1.page_link("app.py", label="🏠 Home")
+nav1.page_link("App.py", label="🏠 Home")
 nav2.page_link("pages/dashboard.py", label="📈 Dashboard")
 nav3.page_link("pages/data_explorer.py", label="📊 Explorer")
 nav4.page_link("pages/model_comparison.py", label="🤖 Compare")
